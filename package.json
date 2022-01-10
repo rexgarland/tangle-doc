@@ -1,0 +1,29 @@
+{
+  "name": "tangle-doc",
+  "version": "1.0.0",
+  "description": "Tangle.js for the modern web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rexgarland/tangle-doc.git"
+  },
+  "keywords": [
+    "tangle",
+    "reactive",
+    "document",
+    "explorable",
+    "explanation"
+  ],
+  "author": "Rex Garland <rex@rexgarland.dev> (https://rexgarland.dev/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rexgarland/tangle-doc/issues"
+  },
+  "homepage": "https://github.com/rexgarland/tangle-doc#readme",
+  "engines": {
+    "node": ">= 14.0.0"
+  },
+}
