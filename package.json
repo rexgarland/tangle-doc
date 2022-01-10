@@ -2,7 +2,11 @@
   "name": "tangle-doc",
   "version": "1.0.0",
   "description": "Tangle.js for the modern web",
-  "main": "index.js",
+  "main": "bin/index.js",
+  "preferGlobal": "true",
+  "bin": {
+    "tangle": "bin/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,5 +29,5 @@
   "homepage": "https://github.com/rexgarland/tangle-doc#readme",
   "engines": {
     "node": ">= 14.0.0"
-  },
+  }
 }
