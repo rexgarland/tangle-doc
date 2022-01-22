@@ -1,6 +1,6 @@
 {
   "name": "tangle-doc",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Tangle.js for the modern web",
   "main": "src/Tangle.js",
   "scripts": {
@@ -29,7 +29,8 @@
   },
   "files": [
     "umd/*",
-    "styles/*"
+    "styles/*",
+    "src/*"
   ],
   "devDependencies": {
     "browserify": "17.0.0",
