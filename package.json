@@ -1,6 +1,6 @@
 {
   "name": "tangle-doc",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Tangle.js for the modern web",
   "main": "src/Tangle.js",
   "scripts": {
@@ -32,10 +32,12 @@
     "styles/*",
     "src/*"
   ],
-  "devDependencies": {
-    "browserify": "17.0.0",
-    "jest": "27.4.7",
+  "dependencies": {
     "mootools": "1.5.2",
     "sprintf-js": "1.1.2"
+  },
+  "devDependencies": {
+    "browserify": "17.0.0",
+    "jest": "27.4.7"
   }
 }
