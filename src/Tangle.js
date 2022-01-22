@@ -25,9 +25,9 @@
 //  Tangle.formats.myFormat = function (value) { return "..."; };
 //
 
-const BVTouchable = require('./BVTouchable');
+const BVTouchable = require('./BVTouchable.js');
 require('sprintf-js');
-const { removeClass, addClass, setStyles } = require('./shim');
+const { removeClass, addClass, setStyles } = require('./shim.js');
 
 var Tangle = this.Tangle = function (rootElement, modelClass) {
 

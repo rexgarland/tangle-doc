@@ -2,7 +2,7 @@
 
 [Tangle.js](http://worrydream.com/Tangle/) for the modern web.
 
-This is meant to be as backwards-compatible as possible. The main benefit here is sourcing the code from a CDN.
+This is meant to be as backwards-compatible as possible. The main benefit here is sourcing the code from a CDN. I also added a pure-CSS paper shadow effect.
 
 ## Usage
 

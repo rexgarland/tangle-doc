@@ -6,7 +6,7 @@
 //  (c) 2011 Bret Victor.  MIT open-source license.
 //
 
-const { addEvents, removeEvents } = require('./shim')
+const { addEvents, removeEvents } = require('./shim.js')
 require('mootools');
 
 var BVTouchable = this.BVTouchable = new Class({
