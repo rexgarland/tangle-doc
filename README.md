@@ -7,8 +7,8 @@ This is meant to be as backwards-compatible as possible. The main benefit here i
 ## Usage
 
 1. Link to CDN styles and scripts in your html header
-	- `<link rel="stylesheet" type="text/css" href="https://unpkg.com/tangle-doc/styles/TangleKit.css">`
-	- `<script type="text/javascript" src="https://unpkg.com/tangle-doc/umd/Tangle.min.js"></script>`
+	- `<link rel="stylesheet" type="text/css" href="https://unpkg.com/tangle-doc@^1/styles/TangleKit.css">`
+	- `<script type="text/javascript" src="https://unpkg.com/tangle-doc@^1/umd/Tangle.min.js"></script>`
 2. Every div with a class `Tangle` will be styled as a Tangle document (with the paper effect). All tangle classes (e.g. TKAdjustableNumber) also come with a default style. You can override any of these classes in your own stylesheets.
 3. Write normal Tangle html inside your example (see the original API).
 4. Use the global `Tangle` variable to instantiate a tangle object using the DOM element you chose in step (2).
