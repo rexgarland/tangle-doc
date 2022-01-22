@@ -1,0 +1,83 @@
+/*
+ *  TangleKit.css
+ *  Tangle 0.1.0
+ *
+ *  Created by Bret Victor on 6/10/11.
+ *  (c) 2011 Bret Victor.  MIT open-source license.
+ *
+ */
+
+
+/* 
+Paper shadow adopted from Martin Wolf's codepen:
+https://codepen.io/martinwolf/pen/hxdmv
+*/
+
+.Tangle {
+  position: relative;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+
+  padding: 1rem;
+}
+
+.Tangle::before,
+.Tangle::after {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  width: 50%;
+  height: 10px;
+  box-shadow: 0 5px 14px rgba(0,0,0,.7);
+  z-index: -1;
+}
+
+.Tangle::before {
+  left: 5px;
+  transform: translateX(-50%) skew(-4deg) rotate(-4deg) translateX(50%);
+}
+
+.Tangle::after {
+  right: 5px;
+  transform: translateX(50%) skew(4deg) rotate(4deg) translateX(-50%);
+}
+
+/* cursor */
+
+.TKCursorDragHorizontal {
+	cursor: pointer;
+	cursor: move;
+	cursor: col-resize;
+}
+
+
+/* TKToggle */
+
+.TKToggle {
+	color: #46f;
+	border-bottom: 1px dashed #46f;
+	cursor: pointer;
+}
+
+
+/* TKAdjustableNumber */
+
+.TKAdjustableNumber, .TKLogAdjustableNumber {
+	position:relative;
+	color: #46f;
+	border-bottom: 1px dashed #46f;
+}
+
+.TKAdjustableNumberHover {
+}
+
+.TKAdjustableNumberDown {
+	color: #00c;
+	border-bottom: 1px dashed #00c;
+}
+
+.TKAdjustableNumberHelp {
+	position:absolute;
+	color: #00f;
+	font: 9px "Helvetica-Neue", "Arial", sans-serif;
+}

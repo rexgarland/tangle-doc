@@ -1,14 +1,11 @@
 {
   "name": "tangle-doc",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Tangle.js for the modern web",
-  "main": "bin/index.js",
-  "preferGlobal": "true",
-  "bin": {
-    "tangle": "bin/index.js"
-  },
+  "main": "src/Tangle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "browserify src/Tangle.js -s Tangle -o umd/Tangle.min.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -29,5 +26,14 @@
   "homepage": "https://github.com/rexgarland/tangle-doc#readme",
   "engines": {
     "node": ">= 14.0.0"
+  },
+  "files": [
+    "umd/*"
+  ],
+  "devDependencies": {
+    "browserify": "17.0.0",
+    "jest": "27.4.7",
+    "mootools": "1.5.2",
+    "sprintf-js": "1.1.2"
   }
 }
