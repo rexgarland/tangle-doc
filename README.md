@@ -13,28 +13,6 @@ This is meant to be as backwards-compatible as possible. The main benefit here i
 3. Write normal Tangle html inside your example (see the original API).
 4. Use the global `Tangle` variable to instantiate a tangle object using the DOM element you chose in step (2).
 
-```javascript
-window.addEvent('domready', function () {
-
-    var model = {
-        initialize: function () {
-            this.cookies = 3;
-            this.caloriesPerCookie = 50;
-            this.caloriesPerDay = 2100;
-        },
-        update: function () {
-            this.calories = this.cookies * this.caloriesPerCookie;
-            this.dailyPercent = 100 * this.calories / this.caloriesPerDay;
-        }
-    };
-    
-    var element = document.getElementById("cookieExample");
-    if (!element) { break; }
-    new Tangle(element,model);
-    
-});
-```
-
 ## Simple example
 
 See `example/test.html` for details.

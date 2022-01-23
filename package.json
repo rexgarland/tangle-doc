@@ -1,10 +1,10 @@
 {
   "name": "tangle-doc",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Tangle.js for the modern web",
   "main": "src/Tangle.js",
   "scripts": {
-    "build": "browserify src/Tangle.js -s Tangle -o umd/Tangle.min.js",
+    "build": "browserify src/Tangle.js -s Tangle | uglifyjs > umd/Tangle.min.js",
     "test": "jest"
   },
   "repository": {
@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "browserify": "17.0.0",
-    "jest": "27.4.7"
+    "jest": "27.4.7",
+    "uglify-js": "3.14.5"
   }
 }
